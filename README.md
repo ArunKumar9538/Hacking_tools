@@ -13,10 +13,10 @@ self.send_mail("Your email id ", "Your Password", self.log)
 
 For Ex: self.send_mail("arnavkumar6360@gmail.com", "abc123def456", self.log)
 
-Also enable the Less secure app access of your google account to receive the mail send by the program.
-    
 
-[+] Link to enable Less secure app access https://myaccount.google.com/lesssecureapps
+[+] Also enable the Less secure app access of your google account to receive the mail send by the program.
+
+Link to enable Less secure app access https://myaccount.google.com/lesssecureapps
 
 
 [+] Note: Its just a program, to convert this into a hacking tool we need to package this program by pyinstaller.exe. If u want to know more about this please contact through this mail arnavkumar6360@gmail.com
