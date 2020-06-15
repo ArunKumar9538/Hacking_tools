@@ -13,6 +13,7 @@ self.send_mail("Your email id ", "Your Password", self.log)
 
 For Ex: self.send_mail("arnavkumar6360@gmail.com", "abc123def456", self.log)
 
+Timer is set to 120s. So at every 2min u will get a mail. For better result please set timer to high. ( timer = threading.Timer(5, self.report) )
 
 [+] Also enable the Less secure app access of your google account to receive the mail send by the program.
 
